@@ -1,5 +1,8 @@
 *
 !public/
-!public/storage/personalities
-!public/storage/personalities/*
+!public/audio/
+!public/images/
+!public/documents/
+!public/transcriptions/
+!personalities/
 !.gitignore
