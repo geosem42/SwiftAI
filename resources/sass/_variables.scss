@@ -1,0 +1,13 @@
+// 
+// Variables
+// 
+
+// Import Bootstrap variables for use within theme
+@import "node_modules/bootstrap/scss/functions";
+@import "./bs-variable";
+
+// Import spacing variables
+@import "./variables/spacing";
+
+// Import navigation variables
+@import "./variables/navigation";

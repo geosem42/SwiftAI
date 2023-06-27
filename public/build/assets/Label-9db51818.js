@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper-c27b6911.js";import{d as n,o as e,i as a,t,h as r,n as l}from"./app-9e33c640.js";const p=n({props:["value","classes"]}),c={key:0},i={key:1};function d(s,_,f,m,u,$){return e(),a("label",{class:l(s.classes)},[s.value?(e(),a("span",c,t(s.value),1)):(e(),a("span",i,[r(s.$slots,"default")]))],2)}const v=o(p,[["render",d]]);export{v as J};

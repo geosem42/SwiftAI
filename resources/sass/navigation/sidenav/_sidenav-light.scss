@@ -1,0 +1,66 @@
+// 
+// Sidenav Light
+// 
+
+// Light theme for sidenav
+// Append .sb-sidenav-light to .sb-sidenav to use
+
+// Add styling for icons used within nav links
+
+nav {
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, .12);
+}
+
+.nav,
+.sb-sidenav-menu {
+    .nav-link .sb-nav-link-icon {
+        margin-right: 1rem;
+    }
+}
+
+.sb-sidenav-light {
+    background-color: $primary;
+    color: $sidenav-light-color;
+
+    .sb-sidenav-menu {
+        .sb-sidenav-menu-heading {
+            color: $sidenav-light-heading-color;
+        }
+
+        .nav-link {
+            color: $light;
+            font-weight:600;
+
+            .sb-nav-link-icon {
+                color: $gray-500;
+            }
+
+            .sb-sidenav-collapse-arrow {
+                color: $sidenav-light-icon-color;
+            }
+
+            &:hover {
+                background-color: $blue-shade;
+                color: $light;
+
+                .sb-nav-link-icon {
+                    color: $warning;
+                }
+            }
+
+            &.active {
+                color: $light;
+                background-color: $blue-shade;
+
+                .sb-nav-link-icon {
+                    color: $warning;
+                }
+            }
+        }
+    }
+
+    .sb-sidenav-footer {
+        background-color: $blue-shade;
+        color: $light;
+    }
+}

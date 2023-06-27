@@ -1,0 +1,39 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "watch": "vite build --watch"
+    },
+    "devDependencies": {
+        "@popperjs/core": "^2.11.8",
+        "@types/marked": "^5.0.0",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "@vue/compiler-sfc": "^3.0.5",
+        "@vue/server-renderer": "^3.2.31",
+        "alpinejs": "^3.2.6",
+        "autoprefixer": "^10.4.7",
+        "axios": "^1.4.0",
+        "bootstrap": "^5.3.0",
+        "laravel-vite-plugin": "^0.7.2",
+        "lodash": "^4.17.19",
+        "postcss": "^8.4.14",
+        "vite": "^4.0.0",
+        "vue": "^3.0.5",
+        "vue-loader": "^17.1.0"
+    },
+    "dependencies": {
+        "@inertiajs/inertia": "^0.11.1",
+        "@inertiajs/vue3": "^1.0.8",
+        "bootstrap-icons": "^1.10.5",
+        "install": "^0.13.0",
+        "markdown-it": "^13.0.1",
+        "moment": "^2.29.4",
+        "nprogress": "^0.2.0",
+        "or": "^0.2.0",
+        "resize-observer-polyfill": "^1.5.1",
+        "sass": "^1.57.1",
+        "simplebar": "^6.2.5",
+        "sweetalert2": "^11.7.12",
+        "yarn": "^1.22.19"
+    }
+}
