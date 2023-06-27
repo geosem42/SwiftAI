@@ -11,20 +11,26 @@
  # Installation
 Run the following commands:
 
-Install PHP dependencies
+- Install PHP dependencies
+
 `composer install`
 
-Install node packages
+- Install node packages
+
 `npm install`
 
-Migrate the database
+- Migrate the database
+
 `php artisan migrate`
 
-Seed the `personalities` table
+- Seed the `personalities` table
+
 `php artisan db:seed --class=PersonalitiesTableSeeder`
 
-Run the server
+- Run the server
+
 `php artisan serve`
 
-Build assets
+- Build assets
+
 `npm run vite build` or `npm run watch` for development.
