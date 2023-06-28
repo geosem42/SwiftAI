@@ -1,5 +1,5 @@
 # Swift AI
- Swift AI is a web application built using Laravel, Inertia.js, and Vue.js. It serves as a centralized hub that seamlessly integrates various AI tools and services from companies like OpenAI, Microsoft, and Stability AI. The platform aims to streamline the usage of diverse AI solutions, providing users with a cohesive experience.
+Swift AI is a web application built using Laravel, Inertia.js, and Vue.js. It serves as a centralized hub that seamlessly integrates various AI tools and services from companies like OpenAI, Microsoft, and Stability AI. The platform aims to streamline the usage of diverse AI solutions, providing users with a cohesive experience.
 
  # Features
  1. AI Chat (OpenAI)
@@ -49,3 +49,7 @@ AZURE_RESOURCE_KEY=
 - Build assets
 
 `npm run vite build` or `npm run watch` for development.
+
+# Thanks
+- [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
+- [StarBootstrap](https://github.com/StartBootstrap/startbootstrap-sb-admin)
