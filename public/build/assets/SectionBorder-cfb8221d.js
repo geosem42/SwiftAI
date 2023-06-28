@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{o,i as t,f as s}from"./app-9e33c640.js";const c={},r={class:"py-3"},n=s("hr",null,null,-1),_=[n];function a(i,d){return o(),t("div",r,_)}const m=e(c,[["render",a]]);export{m as J};

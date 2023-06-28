@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{d as o,o as n,i as s,h as r}from"./app-9e33c640.js";const p=o({props:{type:{type:String,default:"button"}}}),a=["type"];function c(t,d,i,f,u,_){return n(),s("button",{type:t.type,class:"btn btn-danger text-white text-uppercase"},[r(t.$slots,"default")],8,a)}const y=e(p,[["render",c]]);export{y as J};

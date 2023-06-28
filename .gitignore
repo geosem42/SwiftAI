@@ -23,3 +23,5 @@ Homestead.json
 .phpunit.result.cache
 
 /.vscode
+
+/public/build
