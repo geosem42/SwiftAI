@@ -71,8 +71,8 @@
           <div class="d-grid mt-4">
             <button v-if="!isLoading" class="btn btn-shade btn-lg text-secondary" @click.prevent="createImage">Generate
               Image</button>
-            <button v-if="isLoading" class="btn btn-shade btn-lg" type="button" disabled>
-              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <button v-if="isLoading" class="btn btn-shade btn-lg d-flex justify-content-center align-items-center" type="button" disabled>
+              <span class="spinner-border spinner-border-md" role="status" aria-hidden="true"></span>
               <span class="visually-hidden">Loading...</span>
             </button>
             <span class="disclaimer text-center">
@@ -86,8 +86,8 @@
         <div class="container" :class="{ 'slide-down': isPushed }">
           <transition-group name="slide-down" tag="div">
             <div class="image-container" v-for="image in imagesList" :key="image.original">
+              <p class="image-prompt text-white fw-bold fs-6 mb-2">{{ image.prompt }}</p>
               <div class="wrapper-img">
-                <p class="image-prompt text-white fw-bold fs-6 mb-2">{{ image.prompt }}</p>
                 <img :src="'storage/' + image.original" class="img-thumbnail image child" alt="Generated Image" />
                 <div class="middle d-flex flex-row justify-content-center">
                   <a :href="'storage/' + image.original" class="btn btn-secondary me-1" data-bs-toggle="tooltip"
