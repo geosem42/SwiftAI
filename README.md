@@ -30,7 +30,7 @@ Run the following commands:
 - Add the following variables to your `.env` file and add your keys. You can obtain your keys from [OpenAI](https://platform.openai.com/account/api-keys), [Stability AI](https://beta.dreamstudio.ai/account), and [Microsoft Azure](https://portal.azure.com)
 ```
 STABILITY_API_KEY=
-STABILITY_MODEL=stable-diffusion-xl-1024-v0-9
+STABILITY_MODEL=stable-diffusion-xl-beta-v2-2-2
 STABILITY_MODEL_UPSCALE=esrgan-v1-x2plus
 
 OPENAI_API_KEY=
