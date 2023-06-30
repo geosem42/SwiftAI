@@ -2,20 +2,12 @@
 	<app-layout title="Home">
 		<main>
 			<div class="container-fluid px-4">
-			<h1 class="mt-4">Sidenav Light</h1>
-			<ol class="breadcrumb mb-4">
-				<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-				<li class="breadcrumb-item active">Sidenav Light</li>
-			</ol>
+			<h1 class="mt-4">Swift AI</h1>
 			<div class="card mb-4">
 				<div class="card-body">
-					This page is an example of using the light side navigation option. By appending the
-					<code>.sb-sidenav-light</code>
-					class to the
-					<code>.sb-sidenav</code>
-					class, the side navigation will take on a light color scheme. The
-					<code>.sb-sidenav-dark</code>
-					is also available for a darker option.
+					<p>Swift AI is a powerful web application built using Laravel, Inertia.js, and Vue.js. It serves as a centralized hub that seamlessly integrates various AI tools and services from companies such as OpenAI, Microsoft, and Stability AI. The platform aims to streamline the usage of diverse AI solutions, providing users with a cohesive experience.</p>
+					<p>Created by: <a href="https://github.com/geosem42">George Semaan</a></p>
+					<p>Github: <a href="https://github.com/geosem42/Swift-AI">https://github.com/geosem42/Swift-AI</a></p>
 				</div>
 			</div>
 		</div>
