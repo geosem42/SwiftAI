@@ -52,4 +52,4 @@ AZURE_RESOURCE_KEY=
 
 # Thanks
 - [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
-- [StarBootstrap](https://github.com/StartBootstrap/startbootstrap-sb-admin)
+- [StartBootstrap](https://github.com/StartBootstrap/startbootstrap-sb-admin)
