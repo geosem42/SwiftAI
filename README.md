@@ -12,21 +12,21 @@ Swift AI is a web application built using Laravel, Inertia.js, and Vue.js. It se
 Run the following commands:
 
 - Install PHP dependencies
-
-`composer install`
-
+```
+composer install
+```
 - Install node packages
-
-`npm install`
-
+```
+npm install
+```
 - Migrate the database
-
-`php artisan migrate`
-
+```
+php artisan migrate
+```
 - Seed the `personalities` table
-
-`php artisan db:seed --class=PersonalitiesTableSeeder`
-
+```
+php artisan db:seed --class=PersonalitiesTableSeeder
+```
 - Add the following variables to your `.env` file and add your keys. You can obtain your keys from [OpenAI](https://platform.openai.com/account/api-keys), [Stability AI](https://beta.dreamstudio.ai/account), and [Microsoft Azure](https://portal.azure.com)
 ```
 STABILITY_API_KEY=
@@ -43,13 +43,17 @@ AZURE_RESOURCE_KEY=
 ```
 
 - Run the server
-
-`php artisan serve`
-
+```
+php artisan serve
+```
 - Build assets
+```
+npm run vite build
 
-`npm run vite build` or `npm run watch` for development.
+## OR
 
+npm run watch
+```
 # Thanks
 - [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 - [StartBootstrap](https://github.com/StartBootstrap/startbootstrap-sb-admin)
