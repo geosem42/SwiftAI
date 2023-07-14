@@ -54,6 +54,16 @@ npm run vite build
 
 npm run watch
 ```
+
+# Screenshots
+![Create New Conversation in AI Chat](https://i.imgur.com/Gshd2Ii.png)
+![AI Chat](https://i.imgur.com/NMpUcrI.png)
+![AI Images](https://i.imgur.com/D27vnEs.png)
+![AI Documents](https://i.imgur.com/dB8APxa.png)
+![Q&A in AI Documents](https://i.imgur.com/CKiSCoK.png)
+![Text To Speech](https://i.imgur.com/mYx497Q.png)
+![Speech To Text](https://i.imgur.com/vyfm8Hc.png)
+
 # Thanks
 - [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 - [StartBootstrap](https://github.com/StartBootstrap/startbootstrap-sb-admin)
