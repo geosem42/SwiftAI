@@ -88,14 +88,14 @@
 
       <!-- Q&A Modal -->
       <div class="modal fade" tabindex="-1" ref="qaModal" aria-labelledby="qaModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="qaModalLabel">Q&A Session</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <div class="card" id="chat2">
+              <div class="card h-100" id="chat2">
                 <div class="card-header d-flex justify-content-between align-items-center p-3">
                   <h5 class="mb-0" v-if="selectedDocument">{{ selectedDocument.file_name }}</h5>
                 </div>
