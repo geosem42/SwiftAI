@@ -48,7 +48,7 @@ php artisan serve
 ```
 - Build assets
 ```
-npm run vite build
+npm run build
 
 ## OR
 
