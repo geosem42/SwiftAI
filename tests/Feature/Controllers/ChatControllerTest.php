@@ -12,7 +12,7 @@ class ChatControllerTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function canGetConversations()
+    public function test_can_get_conversations()
     {
         $user = User::factory()->create();
 
