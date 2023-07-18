@@ -9,8 +9,24 @@ Swift AI is a web application built using Laravel, Inertia.js, and Vue.js. It se
  5. Speech To Text (OpenAI)
 
  # Installation
-Run the following commands:
 
+ ## Application Set up
+Run the following commands:
+- Save the following as  `.env`
+``` 
+APP_NAME=Swift AI Example
+APP_ENV=local
+APP_KEY=
+```
+- Generate a new App Key
+```
+php artisan key:generate 
+```
+- Link the image directory
+```
+php artisan storage:link
+```
+## Install Dependencies
 - Install PHP dependencies
 ```
 composer install
