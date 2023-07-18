@@ -10,6 +10,8 @@ class Personality extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     public function conversations(): HasMany
     {
         return $this->hasMany(Conversation::class);
