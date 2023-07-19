@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\Chat;
@@ -78,7 +79,7 @@ class ChatController extends Controller
 			]);
 
 			$responseData = $response->json();
-			// Log::info('OpenAI API response:', ['responseData' => $responseData]); // Log the response data          
+			// Log::info('OpenAI API response:', ['responseData' => $responseData]); // Log the response data
 
 			if (!isset($responseData['choices'][0]['message']['content'])) {
 				throw new \Exception('Invalid response structure');
@@ -106,8 +107,12 @@ class ChatController extends Controller
 		}
 	}
 
-	public function newConversation(Request $request)
-	{
+    /**
+     * @param Request $request
+     * @return JsonResponse
+     */
+	public function newConversation(Request $request): JsonResponse
+    {
 
 		$validator = Validator::make($request->all(), [
 			'title' => 'required|max:35',
@@ -135,8 +140,11 @@ class ChatController extends Controller
 		}
 	}
 
-	public function getConversations()
-	{
+    /**
+     * @return JsonResponse
+     */
+	public function getConversations(): JsonResponse
+    {
 		$user = User::find(auth()->id());
 		$conversations = Conversation::with('personality')
 			->where('user_id', auth()->id())
@@ -147,8 +155,8 @@ class ChatController extends Controller
 		return response()->json(['allConversations' => $conversations]);
 	}
 
-	public function getMessagesForConversation(Request $request, $conversationId)
-	{
+	public function getMessagesForConversation(Request $request, $conversationId): JsonResponse
+    {
 		try {
 			$conversation = Conversation::with('personality')->find($conversationId);
 
@@ -179,8 +187,8 @@ class ChatController extends Controller
 		}
 	}
 
-	public function getMessageCount($conversationId)
-	{
+	public function getMessageCount(int $conversationId): JsonResponse
+    {
 		try {
 			$count = Chat::where('conversation_id', $conversationId)->count();
 			return response()->json(['count' => $count]);
@@ -193,8 +201,11 @@ class ChatController extends Controller
 		}
 	}
 
-	public function getPersonalities()
-	{
+    /**
+     * @return JsonResponse
+     */
+	public function getPersonalities(): JsonResponse
+    {
 		$personalities = Personality::all();
 		return response()->json(['personalities' => $personalities]);
 	}
