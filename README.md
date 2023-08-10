@@ -9,41 +9,37 @@ Swift AI is a web application built using Laravel, Inertia.js, and Vue.js. It se
  5. Speech To Text (OpenAI)
 
  # Installation
-
- ## Application Set up
-Run the following commands:
-- Grab a fresh `.env` file from [Laravel](https://github.com/laravel/laravel/blob/master/.env.example) and save the following:
+Grab a fresh `.env` file from [Laravel](https://github.com/laravel/laravel/blob/master/.env.example) and save the following:
 ``` 
 APP_NAME=SwiftAI Example
 APP_ENV=local
 APP_KEY=
 ```
-- Generate a new App Key
+Generate a new App Key
 ```
 php artisan key:generate 
 ```
-- Link the image directory
+Link the image directory
 ```
 php artisan storage:link
 ```
-## Install Dependencies
-- Install PHP dependencies
+Install PHP dependencies
 ```
 composer install
 ```
-- Install node packages
+Install node packages
 ```
 npm install
 ```
-- Migrate the database
+Migrate the database
 ```
 php artisan migrate
 ```
-- Seed the `personalities` table
+Seed the `personalities` table
 ```
 php artisan db:seed --class=PersonalitiesTableSeeder
 ```
-- Add the following variables to your `.env` file and add your keys. You can obtain your keys from [OpenAI](https://platform.openai.com/account/api-keys), [Stability AI](https://beta.dreamstudio.ai/account), and [Microsoft Azure](https://portal.azure.com)
+Add the following variables to your `.env` file and add your keys. You can obtain your keys from [OpenAI](https://platform.openai.com/account/api-keys), [Stability AI](https://beta.dreamstudio.ai/account), and [Microsoft Azure](https://portal.azure.com)
 ```
 STABILITY_API_KEY=
 STABILITY_MODEL=stable-diffusion-xl-beta-v2-2-2
@@ -57,12 +53,11 @@ OPENAI_MODEL_QA=gpt-3.5-turbo-16k
 AZURE_RESOURCE_REGION=eastus
 AZURE_RESOURCE_KEY=
 ```
-
-- Run the server
+Run the server
 ```
 php artisan serve
 ```
-- Build assets
+Build assets
 ```
 npm run build
 
