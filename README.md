@@ -11,9 +11,22 @@ Swift AI is a web application built using Laravel, Inertia.js, and Vue.js. It se
  # Installation
 Grab a fresh `.env` file from [Laravel](https://github.com/laravel/laravel/blob/master/.env.example) and save the following:
 ``` 
-APP_NAME=SwiftAI Example
+APP_NAME='SwiftAI Example'
 APP_ENV=local
 APP_KEY=
+```
+Add your database credentials to the `.env` file. For example, for MySQL:
+```
+DB_CONNECTION=mysql
+DB_HOST=<your-database-host, e.g. localhost>
+DB_PORT=<your-database-port, e.g. 3306>
+DB_DATABASE=<your-database-name>
+DB_USERNAME=<your-database-username>
+DB_PASSWORD=<your-database-password>
+```
+Install PHP dependencies
+```
+composer install
 ```
 Generate a new App Key
 ```
@@ -22,10 +35,6 @@ php artisan key:generate
 Link the image directory
 ```
 php artisan storage:link
-```
-Install PHP dependencies
-```
-composer install
 ```
 Install node packages
 ```
