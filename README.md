@@ -15,9 +15,14 @@ APP_NAME='SwiftAI Example'
 APP_ENV=local
 APP_KEY=
 ```
-Install PHP dependencies
+Add your database credentials to the `.env` file. For example, for MySQL:
 ```
-composer install
+DB_CONNECTION=mysql
+DB_HOST=<your-database-host, e.g. localhost>
+DB_PORT=<your-database-port, e.g. 3306>
+DB_DATABASE=<your-database-name>
+DB_USERNAME=<your-database-username>
+DB_PASSWORD=<your-database-password>
 ```
 Generate a new App Key
 ```
