@@ -15,6 +15,10 @@ APP_NAME='SwiftAI Example'
 APP_ENV=local
 APP_KEY=
 ```
+Install PHP dependencies
+```
+composer install
+```
 Generate a new App Key
 ```
 php artisan key:generate 
@@ -22,10 +26,6 @@ php artisan key:generate
 Link the image directory
 ```
 php artisan storage:link
-```
-Install PHP dependencies
-```
-composer install
 ```
 Install node packages
 ```
