@@ -11,7 +11,7 @@ Swift AI is a web application built using Laravel, Inertia.js, and Vue.js. It se
  # Installation
 Grab a fresh `.env` file from [Laravel](https://github.com/laravel/laravel/blob/master/.env.example) and save the following:
 ``` 
-APP_NAME=SwiftAI Example
+APP_NAME='SwiftAI Example'
 APP_ENV=local
 APP_KEY=
 ```
